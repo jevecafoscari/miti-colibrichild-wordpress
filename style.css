@@ -1,0 +1,360 @@
+/*
+Theme Name: Colibri child theme per mitionline.it.
+Theme URI:  https://colibriwp.com
+Description:  Tema di supporto per mitionline.it che rispecchi uno stile del sito di livello.
+Author:  Emilio Dalla Torre
+Textdomain:  emiliodallatorre
+Author URI:  https://emiliodallatorre.it/
+Template:  colibri-wp
+Version:  0.1
+License:  GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
+*/
+
+
+:root {
+    --primary-color: #702248;
+}
+
+.purple-line {
+    background-color: var(--primary-color);
+    height: 32px;
+}
+
+.last-columns {
+    margin-bottom: 2px !important;
+}
+
+.service-description {
+    background-color: var(--primary-color);
+    padding: 32px;
+    margin: 0 !important;
+}
+
+.service-description p, .service-description h4 {
+    color: white;
+}
+
+.service-image img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.wp-block-column.service-image.keep-small-device {
+    margin: 0 !important;
+}
+
+.wp-block-column.service-image.keep-small-device:first-of-type {
+    margin-right: 2px !important;
+}
+
+.wp-block-column.service-image.keep-small-device:last-of-type {
+    margin-left: 2px !important;
+}
+
+.why-column {
+    background-size: cover;
+    margin-bottom: 0;
+    margin-left: 0 !important;
+    background-position: center;
+}
+
+.why-text {
+    padding: 64px;
+    margin: 64px !important;
+    background-color: rgba(55, 47, 45, 0.7);
+}
+
+.why-text p, .why-text h2 {
+    color: white;
+}
+
+.why-text h2 {
+    font-weight: bold;
+}
+
+.why-text h3 {
+    font-weight: bold;
+    color: rgb(149, 140, 136);
+}
+
+.why-text.why-text-full {
+    background-color: rgba(55, 47, 45, 1.0);
+    margin: 0 !important;
+    width: 100%;
+    padding: 128px 64px 128px 64px;
+}
+
+.why-text.why-text-nobg {
+    background-color: unset;
+    padding: 128px 64px 128px 64px;
+}
+
+.why-text.why-text-nobg h2, .why-text.why-text-nobg p {
+    color: rgb(54, 47, 45);
+}
+
+.why-realiability {
+    background-image: url(https://mitionline.it/wp-content/uploads/2022/02/servizi_2-scaled.jpg);
+}
+
+.why-flexibility {
+    background-image: url(https://mitionline.it/wp-content/uploads/2022/03/tappezzeria-scaled.jpg);
+}
+
+.why-service {
+    background-image: url(https://mitionline.it/wp-content/uploads/2022/02/servizi_3-scaled.jpg);
+}
+
+.experience-column {
+    background-image: url(https://mitionline.it/wp-content/uploads/2022/02/servizi_1-scaled.jpg);
+}
+
+.adaptability-column {
+    background-image: url(https://mitionline.it/wp-content/uploads/2022/03/produzione-scaled.jpg);
+}
+
+.innovation-column {
+    background-image: url(https://mitionline.it/wp-content/uploads/2022/02/servizi_6-scaled.jpg);
+}
+
+.wp-block-image.size-large.is-resized, .wp-block-image.size-large.is-resized img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.margined-group {
+    margin: 64px !important;
+}
+
+.margined-group h3 {
+    font-weight: bold;
+    color: black;
+}
+
+.margined-group p {
+    color: black;
+}
+
+.why-text-full.why-text.why-text-nobg h3 {
+    color: rgb(54, 47, 45);
+}
+
+.box-number {
+    font-weight: bold;
+}
+
+.certimage {
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+}
+
+.certimage img {
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.certimage-row .wp-block-column {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.spacer-column {
+    flex-grow: 0.5 !important;
+}
+
+.d-flex.h-section.h-section-global-spacing.position-relative.main-section {
+    display: none;
+}
+
+#copyright {
+    display: none;
+}
+
+.service-columns {
+    margin-bottom: 0 !important;
+}
+
+.service-columns-light {
+    background-color: rgb(149, 140, 136);
+}
+
+.service-columns-light .service-column-text p, .service-columns-light .service-column-text h3 {
+    color: rgb(54, 47, 45);
+}
+
+.service-columns-dark {
+    background-color: rgb(54, 47, 45);
+}
+
+.service-columns-dark .service-column-text p, .service-columns-dark .service-column-text h3 {
+    color: rgb(149, 140, 136);
+}
+
+.service-column-text h3 {
+    font-weight: bold;
+}
+
+.service-column-text {
+    padding: 32px;
+}
+
+.services-image {
+    padding: 16px;
+}
+
+.service-columns-dark .services-image img {
+    border-top: 16px solid;
+    border-right: 16px solid;
+    border-image: linear-gradient(to right, transparent 10%, rgb(181, 178, 178) 95%, transparent 50%) 100% 1;
+}
+
+.service-columns-light .services-image img {
+    border-top: 16px solid;
+    border-right: 16px solid;
+    border-image: linear-gradient(to left, transparent 10%, rgb(181, 178, 178) 95%, transparent 50%) 100% 1;
+}
+
+.service-image {}
+
+@media(min-width: 1100px) {
+    .service-columns .services-image img {
+        height: 300px;
+        object-fit: cover;
+        overflow: hidden;
+        width: 75%;
+        margin: auto;
+    }
+
+    .wp-block-columns.certimage-row {
+        width: 70%;
+        margin: auto;
+    }
+
+    .certimage {
+        width: 200px;
+        height: 300px;
+    }
+
+    .service-column-text {
+        padding: 6em;
+    }
+
+    .services-image {
+        padding: 32px;
+    }
+
+    .box-group .wp-block-columns {
+        margin: 128px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width: 400px) {
+    .service-image {
+        display: none;
+    }
+
+    .keep-small-device {
+        display: unset !important;
+    }
+
+    .wp-block-columns {
+        margin-bottom: 2px !important;
+    }
+
+    .complete-service {
+        background-color: var(--primary-color);
+        padding: 32px;
+        margin: 0;
+        margin-bottom: 2px !important;
+    }
+
+    .complete-service * {
+        color: white;
+    }
+
+    .purple-line {
+        display: none;
+    }
+
+    .box-image img {
+        width: 100%;
+    }
+
+    .box-quality {
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+}
+
+@media(min-width: 600px) {
+    .box-group .wp-block-columns {
+        margin: 64px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .big-column, .small-column {
+        flex-basis: 50% !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    .margined-group {
+        margin: 32px !important;
+    }
+
+    .why-text {
+        padding: 32px;
+        margin: 32px !important;
+        background-color: rgba(55, 47, 45, 0.7);
+    }
+
+    .why-text p, .why-text h2 {
+        color: white;
+    }
+
+    .why-text h2 {
+        font-weight: bold;
+    }
+
+    .why-text h3 {
+        font-weight: bold;
+        color: rgb(149, 140, 136);
+    }
+
+    .why-text.why-text-full {
+        background-color: rgba(55, 47, 45, 1.0);
+        margin: 0 !important;
+        width: 100%;
+        padding: 64px 32px 64px 32px;
+    }
+
+    .why-text.why-text-nobg {
+        background-color: unset;
+        padding: 64px 32px 64px 32px;
+    }
+}
+
+@media(min-width: 400px) {
+    .service-description {
+        height: 250px;
+    }
+
+    .service-image {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+}
