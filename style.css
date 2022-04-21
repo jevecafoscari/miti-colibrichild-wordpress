@@ -81,7 +81,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .why-text.why-text-full {
-    background-color: rgba(55, 47, 45, 1.0);
     margin: 0 !important;
     width: 100%;
     padding: 128px 64px 128px 64px;
@@ -127,7 +126,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .margined-group {
-    margin: 64px !important;
+    padding: 64px !important;
 }
 
 .margined-group h3 {
@@ -139,7 +138,19 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     color: black;
 }
 
+.margined-group {
+    background-color: white;
+}
+
 .why-text-full.why-text.why-text-nobg h3 {
+    color: var(--background-color-dark);
+}
+
+.why-text-full.why-text {
+    background-color: white;
+}
+
+.why-text-full.why-text h3 {
     color: var(--background-color-dark);
 }
 
@@ -201,25 +212,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     padding: 32px;
 }
 
-.services-image {
-    padding: 16px;
-}
-
-.service-columns-dark .services-image img {
-    border-top: 16px solid;
-    border-right: 16px solid;
-    border-image: linear-gradient(to right, transparent 10%, rgb(181, 178, 178) 95%, transparent 50%) 100% 1;
-}
-
-.service-columns-light .services-image img {
-    border-top: 16px solid;
-    border-right: 16px solid;
-    border-image: linear-gradient(to left, transparent 10%, rgb(181, 178, 178) 95%, transparent 50%) 100% 1;
-}
-
-.service-image {
-}
-
 .page-id-147 .content {
     background-color: var(--background-color-dark);
 }
@@ -262,11 +254,9 @@ label.grunion-field-label {
 
 @media (min-width: 1100px) {
     .service-columns .services-image img {
-        height: 300px;
         object-fit: cover;
         overflow: hidden;
-        width: 75%;
-        margin: auto;
+        margin: 0;
     }
 
     .wp-block-columns.certimage-row {
@@ -281,10 +271,6 @@ label.grunion-field-label {
 
     .service-column-text {
         padding: 6em;
-    }
-
-    .services-image {
-        padding: 32px;
     }
 
     .box-group .wp-block-columns {
@@ -336,20 +322,13 @@ label.grunion-field-label {
     }
 
     .footer-columns {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 5%;
     }
 
     .footer-column {
-        display: inline-block;
-        width: 25%;
-        padding-right: 4rem;
         vertical-align: top;
-    }
-
-    .footer-column:first-of-type {
-        padding-left: 4rem;
     }
 
     .footer-column img {
@@ -366,7 +345,7 @@ label.grunion-field-label {
 
 @media (max-width: 1000px) {
     .margined-group {
-        margin: 32px !important;
+        padding: 32px !important;
     }
 
     .why-text {
@@ -389,7 +368,6 @@ label.grunion-field-label {
     }
 
     .why-text.why-text-full {
-        background-color: rgba(55, 47, 45, 1.0);
         margin: 0 !important;
         width: 100%;
         padding: 64px 32px 64px 32px;
@@ -421,16 +399,67 @@ label.grunion-field-label {
 }
 
 .footer-bar {
-    background-color: var(--background-color-dark);
 }
 
 .footer-bar p {
-    color: white;
+    color: var(--background-color-dark);
     padding: 32px;
     margin: 0;
     font-weight: lighter;
     letter-spacing: 1px;
 }
+
 .footer-columns {
     margin-top: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.service-column-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.service-columns:nth-of-type(2) .service-column-image {
+    background-image: url("https://mitionline.it/wp-content/uploads/2022/03/servizi3-scaled.jpg");
+}
+
+.service-columns:nth-of-type(3) .service-column-image {
+    background-image: url("https://mitionline.it/wp-content/uploads/2022/03/servizi2-scaled.jpg");
+}
+
+.service-columns:nth-of-type(4) .service-column-image {
+    background-image: url("https://mitionline.it/wp-content/uploads/2022/03/servizi4-scaled.jpg");
+}
+
+.service-columns:nth-of-type(5) .service-column-image {
+    background-image: url("https://mitionline.it/wp-content/uploads/2022/02/servizi_7.jpg");
+}
+
+.service-columns:nth-of-type(6) .service-column-image {
+    background-image: url("https://mitionline.it/wp-content/uploads/2022/03/servizi5-scaled.jpg");
+}
+
+.service-columns-dark .service-column-image {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.service-columns-light .service-column-image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+ul.colibri-menu li.page_item a {
+    color: white !important;
+}
+
+ul.colibri-menu.bordered-active-item > li::after, #colibri .style-42 ul.colibri-menu.bordered-active-item > li::before {
+    background-color: var(--primary-color) !important;
+}
+
+.h-navigation_sticky ul.colibri-menu li.page_item a {
+    color: var(--primary-color) !important;
+}
+
+.content.position-relative.colibri-main-content-archive {
+    display: none;
 }

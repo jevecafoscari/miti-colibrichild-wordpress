@@ -1,6 +1,6 @@
 <div class="footer-columns">
-    <div class="footer-column">
-        <img src="https://mitionline.it/wp-content/uploads/2022/04/image.png" alt="">
+    <div class="footer-column"
+         style="background-image: url('https://mitionline.it/wp-content/uploads/2022/04/image.png'); background-size: contain; background-position: top; background-repeat: no-repeat">
     </div>
     <div class="footer-column">
         <h4>La nostra sede</h4>
