@@ -212,19 +212,15 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     padding: 32px;
 }
 
-.page-id-147 .content {
-    background-color: var(--background-color-dark);
-}
-
 .contact-column h4 {
-    color: var(--background-color-light) !important;
+    color: var(--background-color-dark) !important;
     font-weight: bold !important;
     margin-top: 32px !important;
     margin-bottom: 8px !important;
 }
 
 .contact-column p {
-    color: white !important;
+    color: var(--background-color-dark) !important;
 }
 
 label.grunion-field-label {
@@ -462,4 +458,20 @@ ul.colibri-menu.bordered-active-item > li::after, #colibri .style-42 ul.colibri-
 
 .content.position-relative.colibri-main-content-archive {
     display: none;
+}
+
+.why-text.why-text-full {
+    background-color: var(--background-color-dark);
+}
+
+.why-text.why-text-full * {
+    color: var(--background-color-light);
+}
+
+.why-text.why-text-full.why-text-light {
+    background-color: white;
+}
+
+.why-text.why-text-full.why-text-light * {
+    color: black;
 }
