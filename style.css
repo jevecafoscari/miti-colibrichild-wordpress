@@ -189,7 +189,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .service-columns-light {
-    background-color: var(--background-color-light);
+    /* background-color: var(--background-color-light); */
 }
 
 .service-columns-light .service-column-text p, .service-columns-light .service-column-text h3 {
@@ -197,11 +197,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 }
 
 .service-columns-dark {
-    background-color: var(--background-color-dark);
+    /* background-color: var(--background-color-dark); */
+    color: var(--background-color-dark);
 }
 
 .service-columns-dark .service-column-text p, .service-columns-dark .service-column-text h3 {
-    color: var(--background-color-light);
+    /* color: var(--background-color-light); */
+    color: var(--background-color-dark);
 }
 
 .service-column-text h3 {
@@ -414,6 +416,7 @@ label.grunion-field-label {
 .service-column-image {
     background-size: cover;
     background-position: center;
+    margin: 8px;
 }
 
 .service-columns:nth-of-type(2) .service-column-image {
@@ -436,13 +439,13 @@ label.grunion-field-label {
     background-image: url("https://mitionline.it/wp-content/uploads/2022/03/servizi5-scaled.jpg");
 }
 
-.service-columns-dark .service-column-image {
+/* .service-columns-dark .service-column-image {
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 }
 
 .service-columns-light .service-column-image {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
-}
+} */
 
 ul.colibri-menu li.page_item a {
     color: white !important;
@@ -474,4 +477,8 @@ ul.colibri-menu.bordered-active-item > li::after, #colibri .style-42 ul.colibri-
 
 .why-text.why-text-full.why-text-light * {
     color: black;
+}
+
+.wp-image-750 {
+    margin: 8px;
 }
