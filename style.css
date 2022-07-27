@@ -526,3 +526,7 @@ ul.colibri-menu.bordered-active-item > li::after, #colibri .style-42 ul.colibri-
     max-width: 100%;
     margin-bottom: 0;
 }
+
+.wp-container-20.wp-block-columns{
+    margin: 64px;
+}
